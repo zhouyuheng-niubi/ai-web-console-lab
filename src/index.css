@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.ant-btn-primary {
+  background-color: #4362EF;
+  border-color: #4362EF;
+}
+.ant-btn-link {
+  color: #4362EF;
+}
+/* .ql-snow .ql-editor h1{
+  font-size: unset !important;
+}
+.ql-snow .ql-editor h2{
+  font-size: unset !important;
+} */

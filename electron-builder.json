@@ -1,0 +1,28 @@
+{
+  "productName": "project",
+  "files": [
+    "./main.cjs",
+    "./preload.js",
+    "./dist/**/*",
+    "./public/*.js",
+    "!src/**/*",
+    "!*.md",
+    "!electron/**/*.map",
+    "!node_modules/**/*"
+  ],
+  "directories": {
+    "output": "./dist-electron"
+  },
+  "compression": "maximum",
+  "win": {
+    "target": {
+      "target": "nsis",
+      "arch": ["x64"]
+    }
+  },
+  "asar": true,
+  "asarUnpack": [
+    "**/node_modules/ffi/**/*",
+    "**/node_modules/ref/**/*"
+  ]
+}
